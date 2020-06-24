@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"> 
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+  
+	<form th:action="@{/Pelajaran/create}">
+	<table>
+	<tr>
+	<td>Kode Pelajaran</td>
+	 <td><input type ="text" name ="kdpealjaran" id="idkode"></td>
+	 </tr>
+	 <tr>
+	 <td>Nama Pelajaran</td>
+	  <td><input type ="text" name ="nmpelajaran" id="idnama"></td>
+	  </tr>
+	  <tr>
+	 <td>Jam Ajar</td>
+	  <td><input type ="text" name ="jam" id="idjam"></td>
+	   </tr>
+	   <tr>
+	   <td>Tingkat</td>
+	  <td><select name="tingkat"> 
+		 
+		 <option> V</option> 
+		 <option> IV</option> 
+		 <option> III</option> 
+		 <option> II</option> 
+		 <option> I</option> 
+	
+	</select></td>
+	</tr>
+	 <tr>
+	   <td>Keteranganr</td>
+	  <td><input type ="text" name ="keterangan" id="idket"></td>
+	  </tr>
+	<tr>
+				<td></td>
+				<td><button type="submit" value="save">Submit</button> 
+			</tr>
+			
+	
+	
+	
+	</table>
+	</form>
+
+</body>
+</html>
